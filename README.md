@@ -12,7 +12,9 @@
       --line: #dedfd7;
       --accent: #d66b4d;
     }
-
+<audio controls autoplay loop>
+  <source src="audio/song.mp3" type="audio/mpeg">
+</audio>
     * { box-sizing: border-box; }
 
     body {
