@@ -155,7 +155,20 @@
         <p class="intro">A quiet journey through alpine villages, winding trails, and mornings shaped by mountain light.</p>
       </div>
     </section>
+<audio id="background-song" autoplay loop muted>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
+<script>
+  const song = document.getElementById("background-song");
+
+  // Re-enable sound after the first click or key press.
+  document.addEventListener("click", () => {
+    song.muted = false;
+    song.play();
+  }, { once: true });
+</script>
     <section class="posts">
       <article>
         <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85" alt="Greek island">
