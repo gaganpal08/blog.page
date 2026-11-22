@@ -15,6 +15,20 @@
 <audio controls autoplay loop>
   <source src="audio/song.mp3" type="audio/mpeg">
 </audio>
+    <div id="play-song" style="
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  font: bold 24px Arial, sans-serif;
+  cursor: pointer;
+">
+  Click anywhere to play song
+</div>
     * { box-sizing: border-box; }
 
     body {
